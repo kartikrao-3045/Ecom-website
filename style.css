@@ -1,0 +1,127 @@
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+  font-family:Poppins, sans-serif;
+}
+body{
+  background:#f5f5f5;
+}
+header{
+  display:flex;
+  justify-content:space-between;
+  padding:15px;
+  background:white;
+  box-shadow:0 2px 5px rgba(0,0,0,0.1);
+  position:sticky;
+  top:0;
+  z-index:10;
+}
+#search{
+  width:60%;
+  padding:10px;
+  border:1px solid #ccc;
+  border-radius:5px;
+}
+.cart-btn{
+  padding:10px 20px;
+  background:#ff4b4b;
+  border:none;
+  border-radius:5px;
+  color:white;
+  cursor:pointer;
+}
+.filters{
+  margin:20px;
+  display:flex;
+  gap:10px;
+}
+.filter{
+  padding:8px 15px;
+  background:white;
+  border:1px solid #ddd;
+  cursor:pointer;
+  border-radius:5px;
+}
+.products{
+  display:grid;
+  grid-template-columns:repeat(auto-fill,minmax(250px,1fr));
+  gap:20px;
+  padding:20px;
+}
+.product{
+  background:white;
+  padding:15px;
+  border-radius:10px;
+  box-shadow:0 2px 5px rgba(0,0,0,0.1);
+  text-align:center;
+}
+.product img{
+  width:100%;
+  height:350px;
+  object-fit:cover;
+  border-radius:10px;
+}
+.add-btn{
+  background:#007bff;
+  color:white;
+  border:none;
+  padding:10px;
+  width:100%;
+  border-radius:5px;
+  cursor:pointer;
+  margin-top:10px;
+}
+.cart-panel{
+  position:fixed;
+  right:-400px;
+  top:0;
+  width:350px;
+  height:100%;
+  background:white;
+  box-shadow:-2px 0 10px rgba(0,0,0,0.2);
+  padding:20px;
+  transition:0.3s;
+  overflow-y:auto;
+  z-index:20;
+}
+.cart-panel.open{
+  right:0;
+}
+.close-cart{
+  background:none;
+  font-size:22px;
+  border:none;
+  cursor:pointer;
+}
+.cart-item{
+  display:flex;
+  gap:10px;
+  background:#f0f0f0;
+  padding:10px;
+  border-radius:8px;
+  margin-bottom:15px;
+}
+.cart-item img{
+  width:60px;
+  height:60px;
+  border-radius:5px;
+  object-fit:cover;
+}
+.qty button{
+  padding:4px 8px;
+  border:none;
+  background:#ddd;
+  cursor:pointer;
+  border-radius:3px;
+}
+.checkout{
+  width:100%;
+  padding:10px;
+  background:#28a745;
+  border:none;
+  color:white;
+  border-radius:5px;
+  cursor:pointer;
+  margin-top:20px;
+}

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>E‑Commerce Store</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- Search Bar -->
+  <header>
+    <input type="text" id="search" placeholder="Search products..." />
+    <button class="cart-btn">Cart (<span class="cart-count">0</span>)</button>
+  </header>
+
+  <!-- Filters -->
+  <div class="filters">
+    <button class="filter" data-cat="all">All</button>
+    <button class="filter" data-cat="electronics">Electronics</button>
+    <button class="filter" data-cat="clothes">Clothes</button>
+    <button class="filter" data-cat="books">Books</button>
+  </div>
+
+  <!-- Products -->
+  <div class="products"></div>
+
+  <!-- Cart Panel -->
+  <div class="cart-panel">
+    <button class="close-cart">×</button>
+
+    <h2>Your Cart</h2>
+    <div class="cart-items"></div>
+
+    <h3>Total: ₹<span class="cart-total">0</span></h3>
+    <button class="checkout">Checkout</button>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
